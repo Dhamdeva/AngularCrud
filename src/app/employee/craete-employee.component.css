@@ -1,0 +1,53 @@
+.card-body {
+  font-family: sans-serif;
+}
+/* {
+  "employees": [
+    {
+      "id": 1,
+      "name": "Mark2",
+      "gender": "Male",
+      "contactPreference": "Email",
+      "email": "mark@pragimtech.com",
+      "dateOfBirth": "2023-09-11",
+      "department": "1",
+      "isActive": true,
+      "image": "../../../assets/image/Dham.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mary",
+      "gender": "Female",
+      "contactPreference": "Phone",
+      "phoneNumber": 2345978640,
+      "dateOfBirth": "11/20/1979",
+      "department": "2",
+      "isActive": true,
+      "image": "../../../assets/image/Dham.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dham",
+      "gender": "Male",
+      "email": "dhamdeva123@gmail.com",
+      "phoneNumber": null,
+      "contactPreference": "Email",
+      "dateOfBirth": "1998-12-13",
+      "department": "1",
+      "isActive": true,
+      "image": "../../../assets/image/Dham.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dhamotharan Devadoss",
+      "gender": "Male",
+      "email": "dhamdeva123@gmail.com",
+      "phoneNumber": "08531039306",
+      "contactPreference": "Email",
+      "dateOfBirth": "1998-12-13",
+      "department": "3",
+      "isActive": true,
+      "image": "../../../assets/image/Dham.jpg"
+    }
+  ]
+} */

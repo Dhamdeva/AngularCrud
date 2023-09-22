@@ -1,0 +1,15 @@
+<div class="card">
+  <div
+    class="card-heading bg-primary cardCursor"
+    [class.bg-success]="hasJustViewed"
+    (click)="isHidden = !isHidden"
+  >
+    <h3 class="card-title">{{ title | uppercase }}</h3>
+  </div>
+  <div class="card-body vertical-align" [hidden]="isHidden">
+    <ng-content select=".mycardBody"></ng-content>
+  </div>
+  <div class="card-footer" [hidden]="isHidden">
+    <ng-content select=".mycardFotter"></ng-content>
+  </div>
+</div>

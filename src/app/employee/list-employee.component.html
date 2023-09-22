@@ -1,0 +1,52 @@
+<!-- <div class="card card-primary mt-5" *ngFor="let employee of employees">
+   <app-display-employee [employee]="employee"></app-display-employee>
+</div>  -->
+
+<!-- <button (click)="nextEmployee()">View Next Employee</button> -->
+<!-- <br />
+<h1 *ngIf="dataFromChild">
+  {{ dataFromChild?.name + " " + dataFromChild?.gender }}
+</h1>
+<div *ngFor="let employee of employees">
+  <app-display-employee [employee]="employee" (notify)="handleNotify($event)">
+  </app-display-employee>
+</div> -->
+<!-- <h1 #h1Variable></h1>
+
+<div *ngFor="let employee of employees">
+  <div (click)="h1Variable.innerHTML = childComponent.getNameAndGender()">
+    <app-employee-display [employee]="employee"> </app-employee-display>
+  </div> -->
+<!-- </div> -->
+<!-- <h1 #h1Variable></h1>
+<div *ngFor="let employee of employees">
+  <div (click)="h1Variable.innerHTML = childComponent.getNameAndGender()">
+  <app-display-employee [employee]="employee" #childComponent>
+  </app-display-employee>
+  </div>
+</div> -->
+<div class="form-group" *ngIf="employee">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Search By Name"
+    style="width: 300px"
+    [(ngModel)]="searchTerm"
+  />
+  <button (click)="changeEmployeeName()" class="btn btn-success">
+    Change Employee Name
+  </button>
+</div>
+<div *ngFor="let employee of filteredEmployees">
+  <!-- <div (click)="onClick(employee.id)" class="pointerCursor"> -->
+  <app-display-employee
+    [employee]="employee"
+    [searchTerm]="searchTerm"
+    (notifyDelete)="onDeleteNotification($event)"
+  >
+  </app-display-employee>
+  <!-- </div> -->
+</div>
+<div *ngIf="error">
+  {{ error }}
+</div>

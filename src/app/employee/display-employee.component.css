@@ -1,0 +1,15 @@
+.cardCursor {
+  cursor: pointer;
+  /* background-color: black;
+  color: white; */
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.employee-head {
+  border: 1px solid black;
+  margin: 20px;
+}
